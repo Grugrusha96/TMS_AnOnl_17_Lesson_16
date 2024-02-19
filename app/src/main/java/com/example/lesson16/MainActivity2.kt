@@ -6,28 +6,29 @@ import android.os.Bundle
 import android.widget.Button
 
 class MainActivity2 : AppCompatActivity() {
-    companion object{
-    const
+    companion object {
+        const
 
-    val SLEEP = 3000L
-}
+        val SLEEP = 3000L
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
         val button = findViewById<Button>(R.id.button2)
+        val button2 = findViewById<Button>(R.id.button7)
         button.setOnClickListener {
             val intent = Intent(this, MainActivity3::class.java)
             startActivity(intent)
+            SLEEP
+        }
+        button2.setOnClickListener {
+            val intent1 = Intent(this, MainActivity4::class.java)
+            startActivity(intent1)
+            SLEEP
 
 
-            val button2 = findViewById<Button>(R.id.button7)
-            button2.setOnClickListener {
-                val intent1 = Intent(this, MainActivity4::class.java)
-                startActivity(intent1)
-
-
-            }
         }
     }
 }

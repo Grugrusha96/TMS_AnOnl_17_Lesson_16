@@ -11,6 +11,7 @@ class MainActivity4 : AppCompatActivity() {
 
         val SLEEP = 3000L
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main4)
@@ -18,32 +19,9 @@ class MainActivity4 : AppCompatActivity() {
         button.setOnClickListener {
             val intent = Intent(this, MainActivity5::class.java)
             startActivity(intent)
+            SLEEP
         }
     }
-
-
-    override fun onStart() {
-        super.onStart()
-    }
-
-    override fun onResume() {
-        super.onResume()
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-    }
-
-    override fun onPause() {
-        super.onPause()
-    }
-
-    override fun onStop() {
-        super.onStop()
-
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-    }
 }
+
+
