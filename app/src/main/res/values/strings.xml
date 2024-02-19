@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lesson16</string>
+    <string name="mainActivityText">Нажми на меня</string>
+    <string name="mainActivity2Text">Нажми еще раз</string>
+    <string name="mainActivity3Text">И еще раз</string>
+    <string name="mainActivity4Text">И опять нажми</string>
+    <string name="mainActivity5Text">Давай заново нажимай</string>
+    <string name="mainActivityBatton">Кнапэчка</string>
+    <string name="mainActivityBatton1">Третий</string>
+    <string name="mainActivityBatton2">Четвертый</string>
+    <string name="mainActivityBatton3">Пятый</string>
+
+</resources>
