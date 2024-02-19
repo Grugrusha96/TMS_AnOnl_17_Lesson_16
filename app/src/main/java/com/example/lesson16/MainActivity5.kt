@@ -1,15 +1,18 @@
 package com.example.lesson16
 
+import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
+
 
 class MainActivity5 : AppCompatActivity() {
     companion object {
         const
 
-        val SLEEP = 3000L
+        val SleepSessionRecord = 3000L
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +22,18 @@ class MainActivity5 : AppCompatActivity() {
         button.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            SLEEP
+            SleepSessionRecord
         }
+
+        val builder = AlertDialog.Builder(this)
+        val intent = Intent(this, MainActivity3::class.java)
+
+        builder.setTitle("Вызвано с 3 окна")
+        builder.setNeutralButton("") { dialog, which ->
+            startActivity(intent)
+
+        }
+        builder.show()
     }
 }
+

@@ -9,7 +9,7 @@ class MainActivity4 : AppCompatActivity() {
     companion object {
         const
 
-        val SLEEP = 3000L
+        val SleepSessionRecord = 3000L
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +19,7 @@ class MainActivity4 : AppCompatActivity() {
         button.setOnClickListener {
             val intent = Intent(this, MainActivity5::class.java)
             startActivity(intent)
-            SLEEP
+            SleepSessionRecord
         }
     }
 }

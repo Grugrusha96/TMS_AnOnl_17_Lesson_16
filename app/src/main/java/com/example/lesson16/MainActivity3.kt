@@ -1,6 +1,7 @@
 package com.example.lesson16
 
 import android.content.Intent
+import android.health.connect.datatypes.SleepSessionRecord
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -10,7 +11,7 @@ class MainActivity3 : AppCompatActivity() {
     companion object {
         const
 
-        val SLEEP = 3000L
+        val SleepSessionRecord = 3000L
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +28,7 @@ class MainActivity3 : AppCompatActivity() {
         button3.setOnClickListener {
             val intent2 = Intent(this, MainActivity5::class.java)
             startActivity(intent2)
-            SLEEP
+            SleepSessionRecord
         }
     }
 }
