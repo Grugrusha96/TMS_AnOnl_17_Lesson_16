@@ -7,6 +7,11 @@ import android.widget.Button
 
 
 class MainActivity3 : AppCompatActivity() {
+    companion object {
+        const
+
+        val SLEEP = 3000L
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
