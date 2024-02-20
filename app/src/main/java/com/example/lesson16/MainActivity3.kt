@@ -9,9 +9,8 @@ import android.widget.Button
 
 class MainActivity3 : AppCompatActivity() {
     companion object {
-        const
+        const val SLEEP = 3000L
 
-        val SleepSessionRecord = 3000L
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,15 +19,17 @@ class MainActivity3 : AppCompatActivity() {
 
         val button = findViewById<Button>(R.id.button3)
         val button3 = findViewById<Button>(R.id.button8)
+
         button.setOnClickListener {
-            val intent = Intent(this, MainActivity4::class.java)
-            startActivity(intent)
+            it.postDelayed({
+                val intent = Intent(this, MainActivity4::class.java)
+                startActivity(intent)
+            }, SLEEP)
         }
 
         button3.setOnClickListener {
-            val intent2 = Intent(this, MainActivity5::class.java)
-            startActivity(intent2)
-            SleepSessionRecord
+            val intent = Intent(this, MainActivity5::class.java)
+            startActivity(intent)
         }
     }
 }

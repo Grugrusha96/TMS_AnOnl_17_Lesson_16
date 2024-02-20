@@ -9,5 +9,7 @@
     <string name="mainActivityBatton1">Третий</string>
     <string name="mainActivityBatton2">Четвертый</string>
     <string name="mainActivityBatton3">Пятый</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
